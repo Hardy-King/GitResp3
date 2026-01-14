@@ -12,6 +12,8 @@ public class User {
     private String sex;
     private String[] hobby;
 
+    private Clazz clazz;
+
     public User() {
         System.out.println("空构造器被调用了");
     }
@@ -62,6 +64,15 @@ public class User {
         this.hobby = hobby;
     }
 
+    public Clazz getClazz() {
+        return clazz;
+    }
+
+    public void setClazz(Clazz clazz) {
+        System.out.println("setClazz方法被调用了");
+        this.clazz = clazz;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -70,6 +81,7 @@ public class User {
                 ", pwd='" + pwd + '\'' +
                 ", sex='" + sex + '\'' +
                 ", hobby=" + Arrays.toString(hobby) +
+                ", clazz=" + clazz +
                 '}';
     }
 }

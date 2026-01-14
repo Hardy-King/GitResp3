@@ -1,5 +1,6 @@
 package com.gk.controller;
 
+import com.gk.pojo.Clazz;
 import com.gk.pojo.User;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
@@ -51,6 +52,40 @@ public class MyController4 {
 
     @RequestMapping("/test6")
     public String test6(User user){
+        System.out.println(user);
+        return "/index.jsp";
+    }
+
+    /**
+     * <p>
+     *         班级：<input type="text" name="cname"/>
+     *     </p>
+     *     <p>
+     *         班级编号：<input type="text" name="cid"/>
+     *     </p>
+     * @param user
+     * @param cla
+     * @return
+     */
+    @RequestMapping("/test7")
+    public String test7(User user, Clazz cla){
+        user.setClazz(cla);
+        System.out.println(user);
+        return "/index.jsp";
+    }
+
+    /**
+     * <p>
+     *         班级：<input type="text" name="clazz.cname"/>
+     *     </p>
+     *     <p>
+     *         班级编号：<input type="text" name="clazz.cid"/>
+     *     </p>
+     * @param user
+     * @return
+     */
+    @RequestMapping("/test8")
+    public String test8(User user){
         System.out.println(user);
         return "/index.jsp";
     }
