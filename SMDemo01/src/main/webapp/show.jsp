@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<form  action="testform2">
+<form  action="test6">
     <p>
-        名字：<input type="text" name="uname"/>
+        名字：<input type="text" name="name"/>
     </p>
     <p>
         年龄：<input type="text" name="age"/>

@@ -1,5 +1,6 @@
 package com.gk.controller;
 
+import com.gk.pojo.User;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,6 +46,12 @@ public class MyController4 {
     public String demo03(@RequestParam(required = true) String name){
         System.out.println(name);
         // 跳转到index.jsp中
+        return "/index.jsp";
+    }
+
+    @RequestMapping("/test6")
+    public String test6(User user){
+        System.out.println(user);
         return "/index.jsp";
     }
 }
