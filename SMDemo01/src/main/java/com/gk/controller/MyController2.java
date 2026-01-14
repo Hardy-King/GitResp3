@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("mvc2")
 public class MyController2 {
 
-    @RequestMapping(value = {"/test1","/test01"})
+    @RequestMapping("/test2*")
     public String test1() {
         System.out.println("控制单元被访问！！");
         return "/first.jsp";
