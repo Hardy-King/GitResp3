@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form  action="test7">
+<form  action="demo02">
     <p>
         名字：<input type="text" name="name"/>
     </p>
@@ -32,10 +32,13 @@
         喝：<input type="checkbox" name="hobby" value="喝"/>
     </p>
     <p>
-        班级：<input type="text" name="cname"/>
+        班级：<input type="text" name="clazz.cname"/>
     </p>
     <p>
-        班级编号：<input type="text" name="cid"/>
+        班级编号：<input type="text" name="clazz.cid"/>
+    </p>
+    <p>
+        日期：<input type="date" name="date"/>
     </p>
     <p>
         <input type="submit" value="提交">

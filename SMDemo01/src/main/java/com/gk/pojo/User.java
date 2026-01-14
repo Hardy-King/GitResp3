@@ -1,8 +1,10 @@
 package com.gk.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Arrays;
+import java.util.Date;
 
 public class User {
 
@@ -13,7 +15,8 @@ public class User {
     private String[] hobby;
 
     private Clazz clazz;
-
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date date;
     public User() {
         System.out.println("空构造器被调用了");
     }
@@ -73,6 +76,14 @@ public class User {
         this.clazz = clazz;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -82,6 +93,7 @@ public class User {
                 ", sex='" + sex + '\'' +
                 ", hobby=" + Arrays.toString(hobby) +
                 ", clazz=" + clazz +
+                ", date=" + date +
                 '}';
     }
 }
