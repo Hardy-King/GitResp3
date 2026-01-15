@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SMDemo02" />
+        <module name="SMDemo01" />
         <module name="springmvc01" />
         <module name="SSMDemo" />
-        <module name="SMDemo01" />
       </profile>
     </annotationProcessing>
   </component>

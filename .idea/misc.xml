@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/springmvc01/pom.xml" />
         <option value="$PROJECT_DIR$/SMDemo01/pom.xml" />
         <option value="$PROJECT_DIR$/SSMDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SMDemo02/pom.xml" />
       </list>
     </option>
   </component>
@@ -135,7 +136,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
