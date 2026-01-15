@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -27,6 +28,18 @@ public class MyController6 {
     @RequestMapping("/demo02")
     public String test6(User user){
         System.out.println(user);
+        return "/index.jsp";
+    }
+
+    @RequestMapping("/demo03")
+    public String testHeader(@RequestHeader String accept){
+        System.out.println(accept);
+        return "/index.jsp";
+    }
+
+    @RequestMapping("/demo04")
+    public String testHeader2(@RequestHeader("accept-encoding") String accept){
+        System.out.println(accept);
         return "/index.jsp";
     }
 
