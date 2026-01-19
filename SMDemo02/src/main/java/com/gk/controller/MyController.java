@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.View;
+import org.springframework.web.servlet.view.InternalResourceView;
 
 @Controller
 public class MyController {
@@ -31,5 +33,20 @@ public class MyController {
             model.addAttribute("name", name);
         }
         return "result";
+    }
+
+    @RequestMapping("/test2")
+    public String test2(){
+
+        //重定向
+        return "hello";
+    }
+
+    @RequestMapping("/test3")
+    public View test3(){
+        View view = new InternalResourceView("/WEB-INF/jsp/hello.jsp");
+
+        //返回视图对象
+        return view;
     }
 }
