@@ -31,7 +31,7 @@
                      */
                     type:"post",//使用post类型的请求
                     data:formData,//请求数据
-                    url:"upload2",//请求地址
+                    url:"upload3",//请求地址
                     /*
                     如果该页面文件上传使用的是非ajax方式，那么必须在form表单中加入：
                     enctype="multipart/form-data"
