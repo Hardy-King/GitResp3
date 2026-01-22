@@ -20,8 +20,8 @@
     <!--location:去哪个目录中寻找静态资源。mapping中**的值是什么，就去location目录中找对应资源-->
     <!--例如URL是http://localhost:8080/demo01/js/jquery.js 其中mapping的**就是jquery.js,就会去location的/js/目录中寻找jquery.js -->
     <mvc:resources mapping="/js/**" location="/js/"/>
-    <!--<mvc:resources mapping="/css/**" location="/WEB-INF/css/"/>
-    <mvc:resources mapping="/images/**" location="/WEB-INF/images/"/>-->
+    <!--<mvc:resources mapping="/css/**" location="/WEB-INF/css/"/>-->
+    <mvc:resources mapping="/images/**" location="images/"/>
 
     <!--自定义视图解析器-->
     <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">

@@ -31,7 +31,7 @@
                      */
                     type:"post",//使用post类型的请求
                     data:formData,//请求数据
-                    url:"upload3",//请求地址
+                    url:"upload4",//请求地址
                     /*
                     如果该页面文件上传使用的是非ajax方式，那么必须在form表单中加入：
                     enctype="multipart/form-data"
@@ -51,6 +51,10 @@
                     contentType:false,
                     success:function (data) {//回调函数
                         console.log(data)
+                        if (data.msg == 1){
+                            alert("上传成功")
+                        }
+                        $("#img_span").html("<img src='images/" + data.filename + "' width = 60px/>")
                     }
                 })
             })
@@ -68,6 +72,7 @@
     </p>
     <p>
         头像：<input type="file" name="photo" id="filebtn"/>
+        <span id="img_span"></span> <%-- 新增处理--%>
     </p>
     <p>
         <input type="submit" value="提交"/>
