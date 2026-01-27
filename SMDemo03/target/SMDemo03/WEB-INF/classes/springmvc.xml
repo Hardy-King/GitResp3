@@ -38,4 +38,12 @@
                 </props>
             </property>
     </bean>
+
+    <!--国际化-->
+    <!-- 加载属性文件 -->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="suiyi"></property>   <!-- 需要明确告诉Spring MVC国际化资源文件名称 -->
+    </bean>
+    <!-- 默认也是AcceptHeaderLocaleResolver，所以可以不配置-->
+    <bean id="localeResovler" class="org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver"></bean>
 </beans>
